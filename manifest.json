@@ -1,0 +1,36 @@
+{
+    "name": "Screenshot-All",
+    "description": "Screenshots all opened Tabs when pressing a Short-Cut (Default: Ctrl + Shift + U)",
+    "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/commands",
+    "manifest_version": 2,
+    "version": "1.0",
+
+    "applications": {
+        "gecko": {
+            "id": "screenshot-all@blakkm9.de",
+            "strict_min_version": "58.0b5"
+        }
+    },
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "commands": {
+        "screenshot-all": {
+            "suggested_key": { "default": "Ctrl+Shift+U" },
+            "description": "Screenshots all opened Tabs of the current Window"
+        }
+    },
+
+    "options_ui": {
+        "page": "options.html",
+        "browser_style": true
+    },
+
+    "permissions": [
+        "tabs",
+        "downloads",
+        "<all_urls>"
+    ]
+}
