@@ -1,14 +1,15 @@
 {
     "name": "Screenshot-All",
     "description": "Screenshots all opened Tabs when pressing a Short-Cut (Default: Ctrl + Shift + U)",
-    "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/commands",
+    "homepage_url": "https://github.com/BlakkM9/screenshot-all",
     "manifest_version": 2,
-    "version": "1.0",
+    "version": "0.1",
+    "author": "BlakkM9",
 
-    "applications": {
+    "browser_specific_settings": {
         "gecko": {
             "id": "screenshot-all@blakkm9.de",
-            "strict_min_version": "58.0b5"
+            "strict_min_version": "60.0"
         }
     },
 
